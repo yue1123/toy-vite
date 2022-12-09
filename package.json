@@ -1,0 +1,25 @@
+{
+  "name": "vite-dev-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vite.js",
+  "scripts": {
+    "serve": "node ./vite.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@vue/compiler-dom": "^3.2.45",
+    "@vue/compiler-sfc": "^3.2.45",
+    "@vue/reactivity": "^3.2.45",
+    "@vue/runtime-core": "^3.2.45",
+    "@vue/runtime-dom": "^3.2.45",
+    "@vue/shared": "^3.2.45",
+    "chalk": "4",
+    "express": "^4.18.2",
+    "vue": "^3.2.45",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
