@@ -8,6 +8,7 @@
 </template>
 
 <script>
+  import { demoFn } from './utils/index.js'
   import { ref } from 'vue'
   export default {
     setup() {
@@ -19,6 +20,7 @@
       function plus() {
         count.value += 1
       }
+      demoFn()
       return { a, count, min, plus }
     }
   }

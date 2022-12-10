@@ -2,7 +2,6 @@ const express = require('express')
 const fs = require('fs')
 const path = require('path')
 const chalk = require('chalk')
-
 // 编译 SFC
 const compilerSFC = require('@vue/compiler-sfc')
 const compilerDOM = require('@vue/compiler-dom')
@@ -62,8 +61,7 @@ app.get('*', (req, res) => {
         const sfc = `import { render as _render } from '${url}?type=template&d=${Date.now()}'
           ${_script}
           __script.render = _render
-          export default __script
-            `
+          export default __script`
         res.end(rewriteImport(sfc))
       } else if (query.type === 'template') {
         // 编译 template
